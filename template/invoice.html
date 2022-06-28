@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <h1>This is the template</h1>
+        <hr />
+        <table>
+            <th>
+                <tr>
+                    <td>COLUMN ONE</td>
+                    <td>COLUMN TWO</td>
+                    <td>COLUMN THRE</td>
+                </tr>
+            </th>
+            <tbody>
+                {% for item in items %}
+                <tr>
+                    <td>{{ item.get('value1') }}</td>
+                    <td>{{ item.get('value2') }}</td>
+                    <td>{{ item.get('value3') }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>
